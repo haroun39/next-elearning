@@ -4,7 +4,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icons } from "../icon";
 
-export default function SiteSidBar({ onNavItemClick, selectedNavItem }) {
+interface SiteHeaderProps {
+  onNavItemClick: (item: any) => void; // Replace 'any' with the actual type
+  selectedNavItem: any; // Replace 'any' with the actual type
+}
+
+const SiteSidBar: React.FC<SiteHeaderProps> = ({
+  onNavItemClick,
+  selectedNavItem,
+}) => {
   const pathname = usePathname();
   const handleLinkClick = (item: any) => {
     onNavItemClick(item);
@@ -105,4 +113,5 @@ export default function SiteSidBar({ onNavItemClick, selectedNavItem }) {
       </nav>
     </div>
   );
-}
+};
+export default SiteSidBar;

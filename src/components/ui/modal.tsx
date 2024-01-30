@@ -1,7 +1,18 @@
 "use client";
 import { useState } from "react";
+import React, { ReactNode } from "react";
 
-export default function Modal({ button, title = "Model title", children }) {
+interface ModalProps {
+  button: ReactNode; // Replace 'ReactNode' with the actual type of your button
+  title?: string;
+  children: ReactNode;
+}
+
+export default function Modal({
+  button,
+  title = "Model title",
+  children,
+}: ModalProps) {
   const [showModal, setShowModal] = useState(false);
   return (
     <>

@@ -1,6 +1,18 @@
 import { Icons } from "@/components/icon";
 
-export default function CardVedio({
+// Define the type for your component props
+type CardVedioProps = {
+  img: string;
+  title: string;
+  teacher: string;
+  views: number | string;
+  date: string; // You may need to change the type based on your actual data type
+  description: string;
+  avatar: string;
+  tags?: string[]; // Make tags optional if it's not always present
+};
+
+const CardVedio: React.FC<CardVedioProps> = ({
   img,
   title,
   teacher,
@@ -9,7 +21,7 @@ export default function CardVedio({
   description,
   avatar,
   tags = [],
-}) {
+}) => {
   return (
     <div className="col-span-1 rounded-lg overflow-hidden bg-[#E1E1E1]">
       <div className="h-[250px] relative">
@@ -61,4 +73,6 @@ export default function CardVedio({
       </div>
     </div>
   );
-}
+};
+
+export default CardVedio;

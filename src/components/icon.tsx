@@ -1,4 +1,6 @@
-type IconProps = React.HTMLAttributes<SVGElement>;
+type IconProps = React.SVGProps<SVGSVGElement> & {
+  stroke?: string;
+};
 
 export const Icons = {
   logo: (props: IconProps) => (

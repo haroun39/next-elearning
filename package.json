@@ -9,12 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/react-splide": "github:haroun39/react-splide",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "splide-nextjs": "^2.4.23",
     "swiper": "^11.0.5",
     "tailwind-merge": "^2.1.0"
   },

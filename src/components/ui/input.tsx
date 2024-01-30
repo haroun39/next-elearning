@@ -1,14 +1,17 @@
 import * as React from "react";
-
 import { cn } from "@/lib/utils";
 
-export type InputProps = React.InputHTMLAttributes<HTMLInputElement>;
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  icon?: React.ReactNode;
+  lable?: string | null;
+}
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, icon = "", lable = null, ...props }, ref) => {
     return (
       <div>
-        <label >{lable}</label>
+        <label>{lable}</label>
         <div className="items-stretch bg-black bg-opacity-10 flex gap-2 px-4 py-5 my-2 rounded-md max-md:flex-wrap max-md:pr-5">
           {icon}
           <input
@@ -25,6 +28,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     );
   }
 );
+
 Input.displayName = "Input";
 
 export { Input };
