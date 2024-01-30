@@ -1,13 +1,12 @@
-import HomePage from "@/components/layout/home/home-page";
 import MainLayoyt from "@/components/layout/main-layout";
-import Image from "next/image";
 
-export default function Home() {
+const page = () => {
   return (
     <MainLayoyt>
       <div className="p-10 max-lg:p-2">
-        <HomePage />
+        <h1>chat</h1>
       </div>
     </MainLayoyt>
   );
-}
+};
+export default page;

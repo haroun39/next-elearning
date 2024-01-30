@@ -16,12 +16,84 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.active {
+  background: linear-gradient(90deg, rgba(59, 110, 126, 0.32) 0.17%, rgba(242, 245, 246, 0.02) 102.1%, rgba(255, 255, 255, 0.00) 108.9%);
+}
+
+.active_category {
+  border-radius: 6px;
+  background: linear-gradient(104deg, #16222A 0%, #355869 100%);
+  color: white;
+}
+.active_etude{
+  background: linear-gradient(97deg, #16222A 0%, #355869 100%);
+  color: white;
+}
+.login_background {
+  background: var(--gradient, linear-gradient(104deg, #16222A 0%, #355869 100%));
+  color: white;
+}
+/* Default styles for larger screens */
+.splide-professeurs {
+  width: 82vw;
+}
+
+.splide-professeurs .splide__slide {
+  width: calc(100% / 15) !important; /* Set the width for 3 slides per page */
+}
+/* Adjust styles for medium screens */
+@media (max-width: 768px) {
+  .splide-professeurs {
+    width: 100vw;
+  }
+  .splide-professeurs .splide__slide {
+    width: calc(100% / 4) !important; /* Set the width for 3 slides per page */
+  }
+  
+}
+
+@media not all and (min-width: 1024px) {
+  .splide-professeurs {
+    width: 95vw;
+  }
+  .splide-professeurs .splide__slide {
+    width: calc(100% / 4) !important; /* Set the width for 3 slides per page */
+  }
+}
+.badge {
+  border-radius: 6px;
+  background: linear-gradient(109deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.12) 101.95%);
+  backdrop-filter: blur(20px);
+}
+
+.splide-categories {
+  width: 82vw;
+}
+
+.splide-categories .splide__slide {
+  width: calc(100% / 15) !important; /* Set the width for 3 slides per page */
+}
+/* Adjust styles for medium screens */
+@media (max-width: 768px) {
+  .splide-categories {
+    width: 100vw;
+  }
+  .splide-categories .splide__slide {
+    width: calc(100% / 4) !important; /* Set the width for 3 slides per page */
+  }
+  
+}
+
+@media not all and (min-width: 1024px) {
+  .splide-categories {
+    width: 95vw;
+  }
+  .splide-categories .splide__slide {
+    width: calc(100% / 4) !important; /* Set the width for 3 slides per page */
+  }
 }
