@@ -20,7 +20,7 @@ const SiteSidBar: React.FC<SiteHeaderProps> = ({
   return (
     <div
       className={cn(
-        "bg-neutral-50 w-[350px] border-none overflow-hidden z-[100] transition-all",
+        "bg-neutral-50 w-[300px] border-none overflow-hidden z-[100] transition-all",
         selectedNavItem ? "w-[305px] fixed top-0 bottom-0" : "max-lg:w-0"
       )}
     >

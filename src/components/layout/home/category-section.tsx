@@ -26,7 +26,7 @@ export default function CategorySection() {
             <Link href="/">
               <div
                 className={cn(
-                  " rounded-[6px]  m-2 p-2 text-center",
+                  " rounded-[6px]  m-2 p-2 text-center text-sm",
                   pathname == item ? "active_category" : "bg-[#E1E1E1]"
                 )}
               >

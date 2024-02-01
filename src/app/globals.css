@@ -40,31 +40,42 @@
 }
 /* Default styles for larger screens */
 .splide-professeurs {
-  width: 82vw;
+  width: 94vw;
 }
 
 .splide-professeurs .splide__slide {
-  width: calc(100% / 15) !important; /* Set the width for 3 slides per page */
+  width: calc(100% / 3.5) !important; /* Set the width for 3 slides per page */
 }
 /* Adjust styles for medium screens */
-@media (max-width: 768px) {
+
+@media (min-width: 640px) {
   .splide-professeurs {
-    width: 100vw;
+    width: 97vw;
   }
   .splide-professeurs .splide__slide {
-    width: calc(100% / 4) !important; /* Set the width for 3 slides per page */
+    width: calc(100% / 7) !important; /* Set the width for 3 slides per page */
+  }
+  
+}
+@media (min-width: 1024px) {
+  .splide-professeurs {
+    width: 80vw;
+  }
+  .splide-professeurs .splide__slide {
+    width: calc(100% / 7) !important; /* Set the width for 3 slides per page */
+  }
+  
+}
+@media (min-width: 1280px) {
+  .splide-professeurs {
+    width: 80vw;
+  }
+  .splide-professeurs .splide__slide {
+    width: calc(100% / 11) !important; /* Set the width for 3 slides per page */
   }
   
 }
 
-@media not all and (min-width: 1024px) {
-  .splide-professeurs {
-    width: 95vw;
-  }
-  .splide-professeurs .splide__slide {
-    width: calc(100% / 4) !important; /* Set the width for 3 slides per page */
-  }
-}
 .badge {
   border-radius: 6px;
   background: linear-gradient(109deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.12) 101.95%);
@@ -72,28 +83,38 @@
 }
 
 .splide-categories {
-  width: 82vw;
+  width: 94vw;
 }
 
 .splide-categories .splide__slide {
-  width: calc(100% / 15) !important; /* Set the width for 3 slides per page */
+  width: calc(100% / 4) !important; /* Set the width for 3 slides per page */
 }
 /* Adjust styles for medium screens */
-@media (max-width: 768px) {
+
+@media (min-width: 640px) {
   .splide-categories {
-    width: 100vw;
+    width: 97vw;
   }
   .splide-categories .splide__slide {
-    width: calc(100% / 4) !important; /* Set the width for 3 slides per page */
+    width: calc(100% / 7) !important; /* Set the width for 3 slides per page */
   }
   
 }
-
-@media not all and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .splide-categories {
-    width: 95vw;
+    width: 80vw;
   }
   .splide-categories .splide__slide {
-    width: calc(100% / 4) !important; /* Set the width for 3 slides per page */
+    width: calc(100% / 7) !important; /* Set the width for 3 slides per page */
   }
+  
+}
+@media (min-width: 1280px) {
+  .splide-categories {
+    width: 80vw;
+  }
+  .splide-categories .splide__slide {
+    width: calc(100% / 11) !important; /* Set the width for 3 slides per page */
+  }
+  
 }
