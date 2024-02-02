@@ -65,7 +65,7 @@ const SiteHeader: React.FC<SiteHeaderProps> = ({
               />
               <span className="justify-center items-center self-center flex gap-1 my-auto max-lg:hidden">
                 <div className="text-gray-900 text-center text-xl leading-4 grow whitespace-nowrap my-auto">
-                  Rayen
+                  Haroun
                 </div>
                 <img
                   loading="lazy"

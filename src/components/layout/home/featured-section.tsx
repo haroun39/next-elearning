@@ -26,7 +26,7 @@ export default function FeaturedSection() {
               />
               <span className="items-stretch self-center flex grow basis-[0%] flex-col my-auto">
                 <div className="text-black text-center text-base font-medium leading-4 whitespace-nowrap">
-                  Rayen
+                  Haroun
                 </div>
                 <div className="text-neutral-500 text-xs leading-4 whitespace-nowrap mt-2">
                   6h Ago
