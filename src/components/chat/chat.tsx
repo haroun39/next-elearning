@@ -3,8 +3,8 @@ import HeaderChat from "./header-chat";
 
 export default function Chat() {
   return (
-    <div className="pt-10 max-lg:p-2 ">
-      <div className="bg-[#000000]/5 p-5 rounded-lg h-[81vh] flex flex-col justify-between">
+    <div className="max-lg:p-2 ">
+      <div className="bg-[#000000]/5 p-5 rounded-lg h-[85vh] flex flex-col justify-between">
         <HeaderChat />
         <div className="h-[65vh] ">
           <div className="my-3 flex justify-end">

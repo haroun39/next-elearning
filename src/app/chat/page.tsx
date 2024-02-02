@@ -6,7 +6,7 @@ const page = () => {
   return (
     <MainLayoyt>
       <div className="p-10 max-lg:p-2">
-        <div className="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2  h-[85vh] overflow-y-hidden">
+        <div className="grid gap-5 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2  h-[85vh] overflow-y-hidden">
           <div className="overflow-y-hidden">
             <Conversations />
           </div>

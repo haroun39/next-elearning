@@ -5,7 +5,7 @@ import CardChat from "./card-chat";
 
 export default function Conversations() {
   return (
-    <div className="p-10 max-lg:p-2 h-full">
+    <div className="max-lg:p-2 h-full">
       <div>
         <div className="grid sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 ">
           <div className="bg-stone-300 grid grid-cols-2  gap-0 rounded-lg border-[0.5px] border-solid border-neutral-300">
